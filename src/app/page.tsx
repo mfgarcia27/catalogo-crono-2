@@ -1,5 +1,4 @@
 import { LeadForm } from "@/components/LeadForm";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -9,15 +8,11 @@ export default function Home() {
         <div className="container mx-auto px-4 py-12 sm:py-16">
           <div className="flex flex-col items-center gap-6 sm:gap-8">
             {/* Logo */}
-            <div className="relative w-48 h-32 sm:w-64 sm:h-40">
-              <Image
-                src="https://cronofoodexpert.com/wp-content/uploads/2024/10/logo-Crono-Food-Expert-quinta-gama.png"
-                alt="Crono Food Expert Logo"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
+            <img
+              src="https://cronofoodexpert.com/wp-content/uploads/2024/10/logo-Crono-Food-Expert-quinta-gama.png"
+              alt="Crono Food Expert Logo"
+              className="w-48 h-auto sm:w-64"
+            />
             
             {/* Text Content */}
             <div className="text-center">
