@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { LeadForm } from "@/components/LeadForm";
 
 export default function Home() {
@@ -5,12 +6,23 @@ export default function Home() {
     <div className="flex min-h-svh flex-col">
       {/* Hero */}
       <header className="bg-primary/5 border-b">
-        <div className="container mx-auto px-4 py-6 text-center sm:py-8">
-          <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Crono <span className="text-primary">Food Expert</span>
-          </h1>
-          <p className="mt-2 text-muted-foreground text-base sm:text-lg">
-            Soluciones especializadas en alimentos
+        <div className="container mx-auto flex flex-col items-center px-4 py-6 sm:py-8">
+          <a
+            href="https://cronofoodexpert.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="https://cronofoodexpert.com/wp-content/uploads/2024/10/logo-Crono-Food-Expert-quinta-gama.png"
+              alt="Crono Food Expert"
+              width={220}
+              height={80}
+              className="h-16 w-auto sm:h-20"
+              priority
+            />
+          </a>
+          <p className="mt-3 text-muted-foreground text-base sm:text-lg">
+            Soluciones gastronómicas para profesionales
           </p>
         </div>
       </header>
@@ -32,7 +44,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t py-6 text-center text-sm text-muted-foreground">
         <div className="container mx-auto px-4">
-          &copy; {new Date().getFullYear()} Crono Food Expert. Todos los derechos reservados.
+          &copy; 2022 Crono Food Expert. Todos los derechos reservados.
         </div>
       </footer>
     </div>
