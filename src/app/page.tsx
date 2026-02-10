@@ -16,18 +16,10 @@ export default function Home() {
 
       {/* Main */}
       <main className="flex flex-1 flex-col items-center justify-center px-4 py-12 sm:py-20 bg-white">
-        <div className="mb-8 text-center max-w-2xl">
-          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-secondary">
-            Soluciones especializadas en alimentos
-          </h1>
-          <p className="mt-3 text-muted-foreground text-base sm:text-lg leading-relaxed">
-            Descubrí nuestra completa línea de productos de quinta gama con los más altos estándares de calidad
-          </p>
-        </div>
         <div className="mb-8 text-center max-w-xl">
-          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-secondary">
+          <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight text-secondary">
             Descargá nuestro catálogo
-          </h2>
+          </h1>
           <p className="mt-3 text-muted-foreground text-base leading-relaxed">
             Accedé a nuestra oferta completa de productos. Dejá tus datos y recibirás el catálogo en formato PDF.
           </p>
