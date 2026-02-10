@@ -80,14 +80,8 @@ export function LeadForm() {
 
   return (
     <Card className="w-full max-w-md mx-auto bg-gray-100/80 border-gray-200">
-      <CardHeader>
-        <CardTitle className="text-2xl">Solicitá nuestro catálogo</CardTitle>
-        <CardDescription className="text-base">
-          Completá el formulario para descargar el catálogo de productos
-        </CardDescription>
-      </CardHeader>
-      <CardContent>
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+      <CardContent className="pt-6">
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 flex flex-col">
           <div className="space-y-2">
             <Label htmlFor="companyName">Nombre de la empresa *</Label>
             <Input
